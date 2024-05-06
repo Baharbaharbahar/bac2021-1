@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="controles.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+</head>
+<body>
+    <form action="consultation.php" method="post" onsubmit="return test2()">
+        <fieldset>
+            <legend>Consultation:</legend>
+            <label >station:</label>
+            <select name="station1" id="station1">
+                <option value="">choisir une station</option>
+                <option value="60715">carthage</option>
+                <option value="60731">enfidha-aerport</option>
+                <option value="60780">EL-borma</option>
+            </select> <br>
+            <label >Donnee climatique:</label>
+            <input type="radio" name="dc" id="temperature"><label>Temperature </label>
+            <input type="radio" name="dc" id="pluie"><label>Pluie </label> <br><br>
+            <input type="reset" value="Annuler">
+            <input type="submit" value="Afficher">
+
+        </fieldset>
+    </form>
+</body>
+</html>
